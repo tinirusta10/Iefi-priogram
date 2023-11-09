@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Iefi priogram", "Iefi priogram\Iefi priogram.csproj", "{54116250-CE2E-4FD2-BA30-DF5DF996DAF0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{54116250-CE2E-4FD2-BA30-DF5DF996DAF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54116250-CE2E-4FD2-BA30-DF5DF996DAF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54116250-CE2E-4FD2-BA30-DF5DF996DAF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54116250-CE2E-4FD2-BA30-DF5DF996DAF0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8C6720D8-2CE1-4BCA-8551-D85D2A980BE3}
+	EndGlobalSection
+EndGlobal

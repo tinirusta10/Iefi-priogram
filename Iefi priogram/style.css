@@ -1,0 +1,8 @@
+﻿body {
+    background-color: black;
+    background: url("https://as01.epimg.net/futbol/imagenes/2021/02/11/reportajes/1613002271_264040_1613002427_noticiareportajes_grande.jpg")
+}
+* {
+    margin: 0;
+    padding: 0;
+}
