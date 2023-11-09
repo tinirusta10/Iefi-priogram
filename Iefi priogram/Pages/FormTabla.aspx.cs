@@ -56,7 +56,7 @@ namespace Iefi_priogram.Pages
             SqlCommand cmd = new SqlCommand("sp_CreateTabla", con);
             con.Open();
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.Add("@Equipo", SqlDbType.NVarChar).Value = txtEquipo.Text;
+            cmd.Parameters.Add("@Equipo", SqlDbType.NVarChar).Value = ddlEquipo.SelectedValue;
             cmd.Parameters.Add("@Puntos", SqlDbType.NVarChar).Value = txtpuntos.Text;
             cmd.Parameters.Add("@Partidos_Jugados", SqlDbType.NVarChar).Value = txtjugados.Text;
             cmd.Parameters.Add("@Goles_Favor", SqlDbType.NVarChar).Value = txtgolesfavor.Text;
@@ -79,7 +79,7 @@ namespace Iefi_priogram.Pages
             da.Fill(ds);
             DataTable dt = ds.Tables[0];
             DataRow row = dt.Rows[0];
-            txtEquipo.Text = row["Equipo"].ToString();
+            ddlEquipo.SelectedValue = row["Equipo"].ToString();
             txtpuntos.Text = row["Puntos"].ToString();
             txtjugados.Text = row["Partidos_Jugados"].ToString();
             txtgolesfavor.Text = row["Goles_Favor"].ToString();
@@ -96,7 +96,7 @@ namespace Iefi_priogram.Pages
             con.Open();
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.Add("@Id_tabla", SqlDbType.Int).Value = sID;
-            cmd.Parameters.Add("@Equipo", SqlDbType.NVarChar).Value = txtEquipo.Text;
+            cmd.Parameters.Add("@Equipo", SqlDbType.NVarChar).Value = ddlEquipo.SelectedValue;
             cmd.Parameters.Add("@Puntos", SqlDbType.NVarChar).Value = txtpuntos.Text;
             cmd.Parameters.Add("@Partidos_Jugados", SqlDbType.Decimal).Value = txtjugados.Text;
             cmd.Parameters.Add("@Goles_Favor", SqlDbType.NVarChar).Value = txtgolesfavor.Text;

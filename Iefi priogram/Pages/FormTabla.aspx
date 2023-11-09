@@ -8,9 +8,17 @@
         </div>
 <form id="formTablas" runat="server" class="container mt-5">
     <div class="form-group">
-        <asp:Label ID="lblequipo" CssClass="form-label" runat="server" Text="Producto:"></asp:Label>
-        <asp:TextBox ID="txtEquipo" CssClass="form-control" runat="server"></asp:TextBox>
-    </div>
+                <asp:Label ID="lblequipo" CssClass="form-label" runat="server" Text="Equipo:"></asp:Label>
+                <asp:DropDownList ID="ddlEquipo" CssClass="form-control" runat="server">
+                    <asp:ListItem Text="River" Value="River" />
+                    <asp:ListItem Text="Boca" Value="Boca" />
+                    <asp:ListItem Text="Racing" Value="Racing" />
+                    <asp:ListItem Text="Tigre" Value="Tigre" />
+                    <asp:ListItem Text="Atletico Tucuman" Value="Atletico Tucuman" />
+                    <asp:ListItem Text="Talleres" Value="Talleres" />
+                    <asp:ListItem Text="Belgrano" Value="Belgrano" />                    <asp:ListItem Text="Independiente" Value="Independiente" />
+                </asp:DropDownList>
+            </div>
 
     <div class="form-group">
         <asp:Label ID="lblpts" CssClass="form-label" runat="server" Text="Puntos:"></asp:Label>
@@ -22,7 +30,7 @@
         <asp:TextBox ID="txtjugados" CssClass="form-control" runat="server" ></asp:TextBox>
     </div>
     <div class="form-group">
-        <asp:Label ID="lblgol" CssClass="form-label" runat="server" Text="Goles:"></asp:Label>
+        <asp:Label ID="lblgol" CssClass="form-label" runat="server" Text="Goles a favor:"></asp:Label>
         <asp:TextBox ID="txtgolesfavor" CssClass="form-control" runat="server"></asp:TextBox>
     </div>
 

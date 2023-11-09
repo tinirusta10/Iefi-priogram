@@ -42,13 +42,13 @@ namespace Iefi_priogram.Pages
         protected global::System.Web.UI.WebControls.Label lblequipo;
 
         /// <summary>
-        /// Control txtEquipo.
+        /// Control ddlEquipo.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtEquipo;
+        protected global::System.Web.UI.WebControls.DropDownList ddlEquipo;
 
         /// <summary>
         /// Control lblpts.
